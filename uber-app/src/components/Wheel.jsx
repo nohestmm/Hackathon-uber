@@ -4,20 +4,24 @@ const Wheel = (props) => {
 return(
     <section>
         <h1>Puntos:</h1>
-        <div className="conatiner-wheel">
+        <div className="container-wheel">
             <img 
+            id = "img-ruleta"
             src={wheel} 
             alt="wheel"
             className="img-responsive"
             style={{
-                transform:`rotate(${props.dataWheel} deg)`,
-            WebkitTransform:`rotate(${props.dataWheel} deg)`
+            transform:`rotate(${props.dataWheel}deg)`,
+            WebkitTransform:`rotate(${props.dataWheel}deg)`,
+            
+            
         }}
+        onTransitionEnd={props.WheelResult}
         ref= {props.wheelRef}
             />
         </div>
-        <div>
-            <button disable = {props.animatedWheel} onClick={props.spinWheel}>Girar</button>
+        <div className="container-button_spin">
+            <button disabled = {props.animatedWheel} onClick={props.spinWheel}>Girar</button>
         </div>
     </section>
 )

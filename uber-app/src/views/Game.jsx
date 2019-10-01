@@ -9,6 +9,7 @@ class Game extends React.Component {
             animatedWheel: false,
         }
         this.wheelData = 0;
+        this.pointsWheel = 0;
         this.spinWheel = this.spinWheel.bind(this)
         this.wheelRef = React.createRef();
 
@@ -17,19 +18,62 @@ class Game extends React.Component {
         let wheelTemp = this.wheelData;
         const gradeSpin = 360;
         let prize = gradeSpin / 8;
+        let temporalValue = Math.floor(Math.random()*8);
+        let resultWheel = temporalValue * prize;
+        let valuePrize = (gradeSpin * 4) + resultWheel;
 
         this.setState({
-			// data_ruleta: ruleta_temp * premio,
-			animated_ruleta: true,
+			dataWheel: wheelTemp * prize,
+			animatedWheel: true,
 		})
-
+        setTimeout(() => {
+			this.wheelRef.current.classList.add('img-ruleta');
+			this.setState({
+				dataWheel: valuePrize,
+			})
+		}, 200);
     }
 
+    WheelResult(){
+		
+		this.wheelRef.current.classList.remove("img-ruleta");
 
+	// 	if (this.pointsWheel >= 0) {
+			
+	this.setState({
+	// 			// total_points: this.state.total_points + this.points_data,
+	animatedWheel: false,
+	})
+
+	// 	}
+	// 	else{
+
+	// 		this.setState({
+	// 			animatedWheel: true,
+	// 		})
+
+	}
+
+	// 	if(this.points_data === -1){
+	// 		alert("Felicidades", "Ha ganado un premio!!!", "success");
+	// 	}
+	// 	else if(this.points_data > 0) {
+	// 		alert("Ganó", "Ha ganado " + this.points_data + " puntos", "success");
+	// 	}
+	// 	else {
+	// 		alert("Perdiste", "Inténtelo nuevamente... :( ", "warning");
+	// 	}
+
+	// }
 
     render() {
         return (
-            <Wheel />
+            <Wheel 
+            animatedWheel={this.state.animatedWheel}
+            spinWheel = {this.spinWheel}
+            wheelRef = {this.wheelRef}
+            dataWheel = {this.state.dataWheel}/>
+            
         )
     }
 }

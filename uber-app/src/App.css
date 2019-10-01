@@ -2,8 +2,32 @@
   max-width: 100%;
   height: auto;
 }
-.conatiner-wheel{
+.container-wheel{
   display:flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
+}
+.container-button_spin{
+  display: flex;
+  justify-content: center;
+}
+.img-ruleta{
+  /*animation-name: infinite-spinning;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;*/
+  /*animation-iteration-count: infinite;*/
+  transition: all 16s ease;
+  overflow-x: hidden
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    /*transform: rotate(360deg);*/
+    transform: rotate(1100deg);
+  }
 }
