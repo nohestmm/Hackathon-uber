@@ -8,8 +8,7 @@ const App = () => {
     <Router>
         <Switch> 
         <Route exact path="/" component= {Game}/>
-        
-       </Switch>
+        </Switch>
        </Router>
   );
 }

@@ -7,7 +7,17 @@ return(
         <div>
             <img 
             src={wheel} 
-            alt="wheel"/>
+            alt="wheel"
+            className="wheel-img"
+            style={{
+                transform:`rotate(${props.dataWheel} deg)`,
+            WebkitTransform:`rotate(${props.dataWheel} deg)`
+        }}
+        ref= {props.wheelRef}
+            />
+        </div>
+        <div>
+            <button onClick={props.spinWheel}>Girar</button>
         </div>
     </section>
 )
