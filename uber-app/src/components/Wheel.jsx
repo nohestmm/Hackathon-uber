@@ -9,14 +9,14 @@ return(
             id = "img-ruleta"
             src={wheel} 
             alt="wheel"
-            className="img-responsive"
+            className="img-responsive img-ruleta"
             style={{
             transform:`rotate(${props.dataWheel}deg)`,
             WebkitTransform:`rotate(${props.dataWheel}deg)`,
             
             
         }}
-        onTransitionEnd={props.WheelResult}
+        onTransitionEnd = {props.stopWheel}
         ref= {props.wheelRef}
             />
         </div>

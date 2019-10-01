@@ -18,7 +18,7 @@
   animation-timing-function: ease;
   animation-fill-mode: forwards;*/
   /*animation-iteration-count: infinite;*/
-  transition: all 16s ease;
+  transition: all 4s ease;
   overflow-x: hidden
 }
 

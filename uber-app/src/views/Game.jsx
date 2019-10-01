@@ -11,6 +11,7 @@ class Game extends React.Component {
         this.wheelData = 0;
         this.pointsWheel = 0;
         this.spinWheel = this.spinWheel.bind(this)
+        this.stopWheel = this.stopWheel.bind(this)
         this.wheelRef = React.createRef();
 
     }
@@ -34,14 +35,14 @@ class Game extends React.Component {
 		}, 200);
     }
 
-    WheelResult(){
+    stopWheel(){
 		
 		this.wheelRef.current.classList.remove("img-ruleta");
 
 	// 	if (this.pointsWheel >= 0) {
 			
 	this.setState({
-	// 			// total_points: this.state.total_points + this.points_data,
+	
 	animatedWheel: false,
 	})
 
@@ -72,7 +73,8 @@ class Game extends React.Component {
             animatedWheel={this.state.animatedWheel}
             spinWheel = {this.spinWheel}
             wheelRef = {this.wheelRef}
-            dataWheel = {this.state.dataWheel}/>
+            dataWheel = {this.state.dataWheel}
+            stopWheel = {this.stopWheel}/>
             
         )
     }
