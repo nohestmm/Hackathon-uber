@@ -17,12 +17,17 @@ class Game extends React.Component {
     }
     spinWheel() {
         let wheelTemp = this.wheelData;
+        console.log("valor temporal", wheelTemp)
         const gradeSpin = 360;
+        console.log("grado", gradeSpin)
         let prize = gradeSpin / 8;
+        console.log("prize", prize)
         let temporalValue = Math.floor(Math.random()*8);
+        console.log("math", temporalValue)
         let resultWheel = temporalValue * prize;
+        console.log("resultado", resultWheel)
         let valuePrize = (gradeSpin * 4) + resultWheel;
-
+        console.log("valor premio", valuePrize)
         this.setState({
 			dataWheel: wheelTemp * prize,
 			animatedWheel: true,

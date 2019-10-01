@@ -13,12 +13,7 @@
   justify-content: center;
 }
 .img-ruleta{
-  /*animation-name: infinite-spinning;
-  animation-duration: 4s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;*/
-  /*animation-iteration-count: infinite;*/
-  transition: all 4s ease;
+   transition: all 4s ease;
   overflow-x: hidden
 }
 
