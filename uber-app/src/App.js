@@ -1,14 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-  vamos que se puede
-      </header>
-    </div>
+    <Router>
+        <Switch> 
+        <Route exact path="/" component= {Home}/>
+        <Route exact path="/projects" component={Projects}/>
+        <Route exact path="/skills" component={Skills}/>
+       </Switch>
+       </Router>
   );
 }
 
