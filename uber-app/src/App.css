@@ -1,5 +1,12 @@
+.container-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .img-responsive{
-  max-width: 100%;
+   max-width: 80%;
   height: auto;
 }
 .container-wheel{
@@ -8,11 +15,15 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 5px;
 }
-.container-button_spin{
+.container-buttons_spin{
   display: flex;
   justify-content: center;
+  margin-top:10px;
+}
+.container-buttons{
+  margin: 0 15px;
 }
 .img-wheel{
    transition: all 4s ease;
@@ -21,10 +32,15 @@
 
 .img-arrow{
   position: relative;
-  top: 45px;
+  top: 42px;
   z-index: -1;
   display: flex;
     justify-content: center;
+}
+.btn-spin{
+  border-radius: 10%;
+  border: 1px solid blue;
+  
 }
 
 @keyframes infinite-spinning {

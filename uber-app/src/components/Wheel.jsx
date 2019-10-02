@@ -3,7 +3,7 @@ import wheel from '../images/wheel.png'
 import arrow from '../images/arrow.png'
 const Wheel = (props) => {
 return(
-    <section>
+    <section className="container-main">
         <h1>Puntos:</h1>
         <div className="img-arrow">
            <img 
@@ -28,12 +28,21 @@ return(
         ref= {props.wheelRef}
             />
         </div>
-        <div className="container-button_spin">
-            <div><
-                button disabled = {props.animatedWheel} onClick={props.spinWheel}>Girar</button>
+        <div className="container-buttons_spin">
+            <div className= "container-buttons">
+                <button 
+                disabled = {props.animatedWheel} 
+                onClick={props.spinWheel} 
+                className = "btn-spin"
+                >Girar
+                </button>
                 </div>
-            <div>
-                <button  onClick={props.unlockSpin}>Habilitar</button>
+            <div className= "container-buttons">
+                <button  
+                onClick={props.unlockSpin}
+                className = "btn-spin"
+                >Habilitar
+                </button>
                 </div>
         </div>
     </section>
