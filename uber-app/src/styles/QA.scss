@@ -1,5 +1,5 @@
 .header{
-    background-image: url("../images/fondo.jpeg");
+    background-color: black;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -11,7 +11,6 @@
     text-align: center;
     justify-content: center;
     position:relative; z-index:1;
-
 }
 .header img{
     width: 18%;
