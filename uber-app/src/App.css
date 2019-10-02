@@ -1,3 +1,4 @@
+
 .container-main{
   display: flex;
   justify-content: center;
@@ -6,21 +7,23 @@
 }
 
 .img-responsive{
-   max-width: 80%;
+   max-width: 100%;
   height: auto;
 }
 .container-wheel{
-  position: relative;
-  z-index: -10;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px;
+  top: -46px;
+    position: relative;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 .container-buttons_spin{
   display: flex;
   justify-content: center;
-  margin-top:10px;
+  top: -15px;
+  position: relative;
 }
 .container-buttons{
   margin: 0 15px;
@@ -30,12 +33,12 @@
   overflow-x: hidden
 }
 
-.img-arrow{
+.container-arrow{
   position: relative;
-  top: 42px;
-  z-index: -1;
+   z-index: -1;
   display: flex;
     justify-content: center;
+   
 }
 .btn-spin{
   border-radius: 10%;
@@ -52,3 +55,7 @@
     transform: rotate(1100deg);
   }
 }
+
+
+
+

@@ -1,11 +1,12 @@
 import React from 'react';
+import swal from 'sweetalert';
 import wheel from '../images/wheel.png'
 import arrow from '../images/arrow.png'
 const Wheel = (props) => {
 return(
     <section className="container-main">
         <h1>Puntos:</h1>
-        <div className="img-arrow">
+        <div className="container-arrow">
            <img 
            src={arrow}
            alt="arrow"
@@ -20,9 +21,7 @@ return(
             className="img-responsive img-wheel"
             style={{
             transform:`rotate(${props.dataWheel}deg)`,
-            WebkitTransform:`rotate(${props.dataWheel}deg)`,
-            
-            
+            WebkitTransform:`rotate(${props.dataWheel}deg)`,  
         }}
         onTransitionEnd = {props.stopWheel}
         ref= {props.wheelRef}
