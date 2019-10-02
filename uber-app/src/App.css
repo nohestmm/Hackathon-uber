@@ -3,6 +3,8 @@
   height: auto;
 }
 .container-wheel{
+  position: relative;
+  z-index: -10;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -12,9 +14,14 @@
   display: flex;
   justify-content: center;
 }
-.img-ruleta{
+.img-wheel{
    transition: all 4s ease;
   overflow-x: hidden
+}
+
+.img-arrow{
+  display: flex;
+    justify-content: center;
 }
 
 @keyframes infinite-spinning {
