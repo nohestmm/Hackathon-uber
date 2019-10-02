@@ -1,0 +1,75 @@
+.header{
+    background-image: url("../images/fondo\ ciudad.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 140px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    text-align: center;
+
+
+}
+.header img{
+    width: 15%;
+    border-radius: 100%;
+
+}
+.Name{
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center
+}
+
+.info{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    justify-content: center;
+}
+.travel{
+    padding: 2% 10%;
+}
+// .details{
+//     width: 100%;
+//     display: flex;
+//     -webkit-flex-wrap: wrap;
+//     flex-wrap: wrap;
+//     -webkit-align-content: center;
+//     align-content: center;
+//     justify-content: center;
+// }
+button.btn.btn-warning.btn-lg.btn-block{
+    padding: 5%;
+}
+p{
+    text-align: center;
+}
+.lineOne,.lineTwo,.lineThree{
+    height: 1px;
+    background-color: rgb(141, 141, 141);
+}
+.lineOne{
+    border-left: 1px solid rgb(141, 141, 141);
+    height: 17%;
+    position: absolute;
+    left: 50%;
+    margin-top: 5px;
+    /* top: 0; */
+}
+.lineTwo{
+    width: 100%;
+    margin: 3% 0;
+}
+.lineThree{
+    width: 100%;
+    margin: 3% 0;
+}
