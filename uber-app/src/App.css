@@ -20,6 +20,11 @@
     align-items: center;
     margin: 5px;
 }
+.tittle-wheel{
+  margin-top: 15%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+}
 .container-buttons_spin{
   display: flex;
   justify-content: center;

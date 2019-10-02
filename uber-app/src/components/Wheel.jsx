@@ -5,7 +5,7 @@ import arrow from '../images/arrow.png'
 const Wheel = (props) => {
 return(
     <section className="container-main">
-        <h1>Puntos:</h1>
+        <h1 className="tittle-wheel">Gira la Ruleta!!!</h1>
         <div className="container-arrow">
            <img 
            src={arrow}
