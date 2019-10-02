@@ -33,7 +33,7 @@ class Game extends React.Component {
             animatedWheel: true,
         })
         setTimeout(() => {
-            this.wheelRef.current.classList.add('img-ruleta');
+            this.wheelRef.current.classList.add('img-wheel');
             this.setState({
                 dataWheel: valuePrize,
             })
@@ -47,7 +47,7 @@ class Game extends React.Component {
     }
     stopWheel =() =>{
 
-        this.wheelRef.current.classList.remove("img-ruleta");
+        this.wheelRef.current.classList.remove("img-wheel");
 
         // 	if (this.pointsWheel >= 0) {
 

@@ -14,7 +14,7 @@ return(
         </div>
         <div className="container-wheel">
             <img 
-            id = "img-ruleta"
+            id = "img-wheel"
             src={wheel} 
             alt="wheel"
             className="img-responsive img-wheel"
