@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 .container-main{
   display: flex;
   justify-content: center;
@@ -7,8 +7,9 @@
 }
 
 .img-responsive{
-   max-width: 100%;
-  height: auto;
+  width: 100%;
+    max-width: 80%;
+    height: auto;
 }
 .container-wheel{
   top: -46px;
@@ -41,10 +42,16 @@
    
 }
 .btn-spin{
-  border-radius: 10%;
-  border: 1px solid blue;
-  
-}
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 16px;
+  border: none;
+  color: #fff;
+  background-color: #5fb709;
+  border-color: #5fb709;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 120px;
+  }
 
 @keyframes infinite-spinning {
   from {
