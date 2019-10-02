@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Profile.scss';
 import { Button } from 'reactstrap';
-import foodDelivery from '../images/Food-Delivery.jpeg';
+import profileImg from '../images/Michael.jpg';
 import win from '../images/gaana.JPG';
 import calificacion from '../images/calificaciones.PNG';
 
@@ -13,9 +13,7 @@ class Profile extends React.Component{
         return (
             <div className="Profile">
                 <div className="header">
-                    <div className="Picture">
-                    <img src={foodDelivery} alt="user"/>
-                    </div>
+                    <img className="Picture rounded-circle" src={profileImg} alt="user"/>
                     <div className="Name">
                     <h1>Michael</h1>
                     </div>

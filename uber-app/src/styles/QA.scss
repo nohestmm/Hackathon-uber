@@ -1,4 +1,4 @@
-.header{
+.headerQA{
     background-color: black;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -10,27 +10,19 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    position:relative; z-index:1;
+    flex-direction: column
 }
-.header img{
+.headerQA img{
     width: 18%;
-    border-radius: 100%;
     margin-top: 1%;
-
 }
-.header h1{
+
+.headerQA h1{
     font-size: 25px;
-    margin-top: -33%;
+    padding: 9% 0;
+
 }
 
-
-.qualification img{
-    width: 70%;
-    position: relative;
-    z-index: 2;
-    left: 59px;
-    top: -32px;
-}
 .Name{
     color: white;
     display: flex;
@@ -41,77 +33,59 @@
     font-size: 2rem;
     line-height: 30px;
 }
-
-.info{
+.info1{
+    padding-top: 5%;
+}
+.infoQA{
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-align-content: center;
     align-content: center;
-    justify-content: center;
+    justify-content: left;
     font-family: 'Open Sans', sans-serif;
-    position: relative;
-    z-index: 3;
-    top: -37px;
+    padding: 4% 7% 0 7%;
 }
-.travel{
-    padding: 2% 10%;
+.infoQA h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+ .badge{
+    white-space: normal;
+    font-size: 14px;
+}
+.badge h3{
+    font-size: 14px;
     text-align: center;
-    flex-direction: column
+    font-family: 'Open Sans', sans-serif;
 }
+.badge img {
+    padding: 2% 0 5% 0;
+}
+.badge button.btn.btn-outline-primary {
+    margin: 5%;
+}
+.line{
+    height: 1px;
+    background-color: #8d8d8d;
+    margin: 3% 7%;
+}
+
+
 button.btn.btn-warning.btn-lg.btn-block{
     padding: 5%;
 }
+
 p{
-    text-align: center;
+    text-align: left;
+    font-size: 14px;
 }
-.game{
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.details{
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 5% 0%;
-    position: relative;
-    z-index: 5;
-    top: -27px;
-}
+
 .game button{
     background: linear-gradient(90deg, #2E175E 0%, rgba(13, 160, 180, 0.68) 100%, #0BD3FF 100%, rgba(18, 137, 166, 0.7328) 100%);
     font-family: 'Open Sans', sans-serif;
     padding: 5%;
 
-}
-.game{
-    padding: 5% 0%;
-    position: relative;
-    z-index: 4;
-    top: -37px;
-}
-.lineTwo,.lineThree{
-    height: 1px;
-    background-color: #8d8d8d;
-    margin: 3% 10%;
-    position: relative;
-    z-index: 4;
-    top: -37px;
-
-    
-}
-.lineOne{
-    background-color: #8d8d8d;
-    height: 81%;
-    width: 1px;
-    position: absolute;
-    left: 50%;
-    margin-top: 8px;
 }
 
 

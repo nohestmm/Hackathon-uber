@@ -11,17 +11,17 @@
     text-align: center;
     justify-content: center;
     position:relative; z-index:1;
+    flex-direction: column
+
 
 }
 .header img{
     width: 18%;
-    border-radius: 100%;
-    margin-top: 1%;
-
+    margin-top: -7%;
 }
 .header h1{
     font-size: 25px;
-    margin-top: -33%;
+    margin-top: 1%;
 }
 
 
@@ -83,6 +83,12 @@ p{
     position: relative;
     z-index: 5;
     top: -27px;
+}
+.details p{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+
 }
 .game button{
     background: linear-gradient(90deg, #2E175E 0%, rgba(13, 160, 180, 0.68) 100%, #0BD3FF 100%, rgba(18, 137, 166, 0.7328) 100%);
