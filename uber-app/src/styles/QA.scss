@@ -22,7 +22,17 @@
     padding: 9% 0;
 
 }
-
+.backQA {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 6;
+    top: 14px;
+    margin-left: 4%;
+}
+.backQA img {
+    width: 20px;
+}
 .Name{
     color: white;
     display: flex;

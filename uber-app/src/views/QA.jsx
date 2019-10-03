@@ -2,25 +2,30 @@ import React from 'react';
 import '../styles/QA.scss';
 import profileImg from '../images/Michael.jpg';
 import insignia from '../images/insignia.JPG';
-import starcount from '../images/star.png';
+import starcount from '../images/star2.png';
 import { Button } from 'reactstrap';
+import arrow from '../images/Vector.png';
+
 
 class QA extends React.Component{
     render(){
         return (
             <div className="QA">
                 <div className="headerQA">
+                    <div className="backQA">
+                        <img className="arrow" src={arrow} alt="arrow"/>
+                    </div>
                     <img className="Picture rounded-circle" src={profileImg} alt="user"/>
                     <div className="Name">
                         <h1>Michael</h1>
                     </div>
-                </div>
+                </div>   
                 <div className="info1">
-                <div className='infoQA'>
-                    <h2>¿Sabías que?</h2>
-                    <p>Diariamente se pierden toneladas de alimentos en Chile.
-                    ¡Tú puedes ayudar a cambiar esta realidad y además aumentar tus ingresos!</p>
-                </div>
+                    <div className='infoQA'>
+                        <h2>¿Sabías que?</h2>
+                        <p>Diariamente se pierden toneladas de alimentos en Chile.
+                        ¡Tú puedes ayudar a cambiar esta realidad y además aumentar tus ingresos!</p>
+                    </div>
                 </div>
                 <div className="line"></div>
                 <div className='infoQA'>
