@@ -1,21 +1,61 @@
-.img-responsive{
-  max-width: 100%;
-  height: auto;
-}
-.container-wheel{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-.container-button_spin{
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.container-main{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.img-ruleta{
+
+.img-responsive{
+  width: 100%;
+    max-width: 80%;
+    height: auto;
+}
+.container-wheel{
+  top: -46px;
+    position: relative;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.tittle-wheel{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+}
+.container-buttons_spin{
+  display: flex;
+  justify-content: center;
+  top: -15px;
+  position: relative;
+}
+.container-buttons{
+  margin: 0 15px;
+}
+.img-wheel{
    transition: all 4s ease;
   overflow-x: hidden
 }
+
+.container-arrow{
+  position: relative;
+   z-index: -1;
+  display: flex;
+    justify-content: center;
+   
+}
+.btn-spin{
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 16px;
+  border: none;
+  color: #fff;
+  background-color: #5fb709;
+  border-color: #5fb709;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 120px;
+  }
 
 @keyframes infinite-spinning {
   from {
@@ -26,3 +66,7 @@
     transform: rotate(1100deg);
   }
 }
+
+
+
+
