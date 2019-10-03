@@ -6,6 +6,7 @@ class Game extends React.Component {
     constructor(...props) {
         super(...props)
         this.state = {
+            activateConfetti : false,
             totalPoints: 0,
             dataWheel: 0,
             animatedWheel: false,
@@ -27,6 +28,7 @@ class Game extends React.Component {
         this.wheelData = 0;
         this.pointsWheel = '';
         this.spinWheel = this.spinWheel.bind(this)
+       
         this.stopWheel = this.stopWheel.bind(this)
         this.wheelRef = React.createRef();
         this.unlockSpin = this.unlockSpin.bind(this);
@@ -59,9 +61,10 @@ class Game extends React.Component {
         this.setState({ animatedWheel: false })
 
     }
-    stopWheel = () => {
-
+    stopWheel(){
+       
         this.wheelRef.current.classList.remove("img-wheel");
+        Swal.fire("Felicidades", `Has ganado ${this.state.typeOfPrize}`, "success");
         this.setState({
             animatedWheel: false,
             activateConfetti:true,
@@ -75,6 +78,7 @@ class Game extends React.Component {
     
   
     render() {
+      
         return (
             <>
             <Wheel
