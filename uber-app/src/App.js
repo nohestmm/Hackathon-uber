@@ -8,8 +8,8 @@ const App = () => {
   return (
     <Router>
         <Switch> 
-        <Route exact path="/" component= {Game}/>
-        <Route exact path="/win" component={WinTheme} ></Route>
+        <Route exact path="/game" component= {Game}/>
+        <Route exact path="/" component={WinTheme} ></Route>
         </Switch>
        </Router>
   );
