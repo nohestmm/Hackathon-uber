@@ -6,42 +6,32 @@ import bunny from '../images/bunny.png'
 import ruleta from '../images/logo_ruleta.png'
 import toruleta from '../images/to_ruleta.png'
 import '../styles/win.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class WinTheme extends React.Component{
     constructor(props){
         super(props);
         this.state ={
-         
-          
-        }
-        
-        }
-      
-       render(){
+                }
+                }
+  render(){
    return(
  <section className="content-winner">
    {/*  <div  className=" navbar">
          Ayuda y gana
       </div> */}
-     
-      <div className="row justify-content-center perfil-back">
+           <div className="row justify-content-center perfil-back">
                <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-9" > 
                     <div className="row justify-content-center">
                         <div className="col-5 col-sm-3 col-md-3 col-lg-4 col-xl-3 align-self-endr info"> 
                             <img src={perfil}  id="logo" alt="logo" className="img-fluid  rounded-circle center"></img>
                             <p className="name">Gonzalo</p>
                         </div>
-                       
-                        
-                   </div>
+                    </div>
              </div>
        </div>
-     
-     
       <div className="container">
-      
-          
+         
             <div className="row justify-content-md-center">
                 
                       <div className="col-4 col-sm-3 col-md-3 col-lg-4 col-xl-1 star-img ">

@@ -1,5 +1,5 @@
 import React from 'react';
-import swal from 'sweetalert';
+
 import wheel from '../images/wheel.png'
 import arrow from '../images/arrow.png'
 const Wheel = (props) => {

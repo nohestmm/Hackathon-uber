@@ -4,8 +4,8 @@ import { Button } from 'reactstrap';
 import profileImg from '../images/Michael.jpg';
 import win from '../images/gaana.JPG';
 import calificacion from '../images/calificaciones.PNG';
-
-
+import arrow from '../images/Vector.png';
+import badgs from '../images/badgs.JPG';
 
 
 class Profile extends React.Component{
@@ -13,6 +13,9 @@ class Profile extends React.Component{
         return (
             <div className="Profile">
                 <div className="header">
+                    <div className="back">
+                    <img className="arrow" src={arrow} alt="arrow"/>
+                    </div>
                     <img className="Picture rounded-circle" src={profileImg} alt="user"/>
                     <div className="Name">
                     <h1>Michael</h1>
@@ -42,7 +45,11 @@ class Profile extends React.Component{
                     <p>Cuéntales a los usuarios un <br></br> poco mas sobre ti</p>
                     <Button outline color="primary">AGREGAR DETALLES</Button>{' '}
                 </div>
-                
+                <div className="badgets">
+                    <img className="badgets" src={badgs} alt="badgets"/>
+                    <p>Verás los reconocimientos y las notas de agradecimiento a medida que la recibas.</p>
+                </div>
+
             </div>
         )
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Game from './views/Game'
-import WinTheme from './views/WinTheme'
+// import WinTheme from './views/WinTheme'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Profile from './views/Profile';
@@ -12,8 +12,9 @@ const App = () => {
         <Switch> 
         <Route exact path="/profile" component= {Profile}/>
         <Route exact path="/qa" component= {QA}/>
-        <Route exact path="/" component= {Game}/>
-        <Route exact path="/win" component={WinTheme} ></Route>
+        <Route exact path="/" component= {Profile}/>
+        <Route exact path="/game" component= {Game}/>
+
         </Switch>
        </Router>
   );
