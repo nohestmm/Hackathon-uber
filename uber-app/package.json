@@ -11,9 +11,14 @@
     "react-dom": "^16.10.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^2.1.8",
+    "save": "^2.4.0",
     "sweetalert": "^2.1.2",
     "sweetalert2": "^8.18.0",
+<<<<<<< HEAD
     "reactstrap": "^8.0.1"
+=======
+    "sweetalert2-react": "^0.8.3"
+>>>>>>> adding confetti and sweetalert
   },
   "scripts": {
     "start": "react-scripts start",

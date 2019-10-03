@@ -1,8 +1,13 @@
 import React from 'react';
 import Wheel from '../components/Wheel'
+<<<<<<< HEAD
 import Swal from 'sweetalert2';
 import Confetti from 'react-confetti';
 
+=======
+import Confetti from 'react-confetti'
+import SweetAlert from 'sweetalert2-react'
+>>>>>>> adding confetti and sweetalert
 class Game extends React.Component {
     constructor(...props) {
         super(...props)
@@ -14,6 +19,7 @@ class Game extends React.Component {
             typeOfPrize: '',
             randomPosition: 0,
             activateConfetti:false,
+            show:false,
         }
         this.prizeList = [
             "Bono de $5000",
@@ -42,6 +48,7 @@ class Game extends React.Component {
         let valuePrize = (gradeSpin * 4) + resultWheel;
 
         this.setState({
+            activateConfetti:false,
             dataWheel: wheelTemp * prize,
             animatedWheel: true,
             typeOfPrize: this.prizeList[temporalValue],
@@ -65,11 +72,10 @@ class Game extends React.Component {
         this.wheelRef.current.classList.remove("img-wheel");
         Swal.fire("Felicidades", `Has ganado ${this.state.typeOfPrize}`, "success");
         this.setState({
-            animatedWheel: true,
+            animatedWheel: false,
             activateConfetti:true,
+            show:true,
         })
-     
-        
     }
   
     render() {
@@ -84,8 +90,15 @@ class Game extends React.Component {
                 stopWheel={this.stopWheel}
                 unlockSpin={this.unlockSpin}
             />
-           {this.state.activateConfetti ? <Confetti/> : null}
-       </> )
+            <SweetAlert
+        show={this.state.show}
+        title="Felicidades!"
+        text= {`Has ganado ${this.state.typeOfPrize}`}
+        onConfirm={() => this.setState({ show: false, activateConfetti: false})}
+      />
+{this.state.activateConfetti ? <Confetti width ={300} height ={600}/> : null}
+</>
+        )
     }
 }
 export default Game;
