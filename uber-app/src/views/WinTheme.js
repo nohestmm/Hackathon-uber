@@ -24,10 +24,11 @@ class WinTheme extends React.Component{
       
        render(){
    return(
-    <React.Fragment>
+ <section className="content-winner">
    {/*  <div  className=" navbar">
          Ayuda y gana
       </div> */}
+     
       <div className="row justify-content-center perfil-back">
                <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-9" > 
                     <div className="row justify-content-center">
@@ -103,7 +104,8 @@ class WinTheme extends React.Component{
                     </div>
                   </div>     
       </div>
-      </React.Fragment>
+      </section>
+     
    )
    }
 

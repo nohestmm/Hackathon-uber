@@ -36,13 +36,7 @@ return(
                 >Girar
                 </button>
                 </div>
-            <div className= "container-buttons">
-                <button  
-                onClick={props.unlockSpin}
-                className = "btn-spin"
-                >Habilitar
-                </button>
-                </div>
+           
         </div>
     </section>
 )

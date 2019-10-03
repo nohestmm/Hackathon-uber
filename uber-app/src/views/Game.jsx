@@ -1,6 +1,7 @@
 import React from 'react';
 import Wheel from '../components/Wheel'
 import Swal from 'sweetalert2';
+import Confetti from 'react-confetti'
 class Game extends React.Component {
     constructor(...props) {
         super(...props)
@@ -10,6 +11,7 @@ class Game extends React.Component {
             animatedWheel: false,
             typeOfPrize: '',
             randomPosition: 0,
+            activateConfetti:false,
         }
         this.prizeList = [
             "Bono de $5000",
@@ -60,11 +62,13 @@ class Game extends React.Component {
         this.wheelRef.current.classList.remove("img-wheel");
         this.setState({
             animatedWheel: true,
+            activateConfetti:true,
         })
         Swal.fire("Felicidades", `Has ganado ${this.state.typeOfPrize}`, "success");
     }
     render() {
         return (
+            <>
             <Wheel
                 animatedWheel={this.state.animatedWheel}
                 spinWheel={this.spinWheel}
@@ -73,7 +77,8 @@ class Game extends React.Component {
                 stopWheel={this.stopWheel}
                 unlockSpin={this.unlockSpin}
             />
-
+{this.state.activateConfetti ? <Confetti/> : null}
+</>
         )
     }
 }
