@@ -13,6 +13,7 @@ class Game extends React.Component {
             animatedWheel: false,
             typeOfPrize: '',
             randomPosition: 0,
+            activateConfetti:false,
         }
         this.prizeList = [
             "Bono de $5000",
@@ -74,11 +75,8 @@ class Game extends React.Component {
     render() {
       
         return (
-           
             <>
-           
-            <Wheel 
-           
+            <Wheel
                 animatedWheel={this.state.animatedWheel}
                 spinWheel={this.spinWheel}
                 wheelRef={this.wheelRef}
@@ -87,9 +85,6 @@ class Game extends React.Component {
                 unlockSpin={this.unlockSpin}
             />
            {this.state.activateConfetti ? <Confetti/> : null}
-          
-     
-
        </> )
     }
 }
