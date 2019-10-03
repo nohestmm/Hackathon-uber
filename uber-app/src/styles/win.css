@@ -1,0 +1,102 @@
+.btn-to-win{
+    background-color: #e22450;
+    padding-top:0.5rem;
+    margin-top:2rem;
+    padding-bottom:0.5rem;  
+    padding-left:1rem;
+    padding-right:1rem;
+    text-align: center;
+    
+   
+    border-radius: 0.5rem;
+    border-width: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.navbar {
+    display: flex;
+    color: white;
+    justify-content:left; 
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+   /*  padding: 5rem;  */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    z-index: 99;
+    
+    font-size: 1.5rem;
+  }
+ /*  .info{
+margin:0rem;
+  } */
+  .container{
+    margin-top: 2rem;
+  }
+  .level{
+      background-color: black;
+      color:white;
+      padding: 1rem;
+      justify-content:center;
+      text-align: center;
+  }
+ /*  .name{
+    justify-content:center;
+    text-align: center;
+  } */
+  .count{
+      font-size: 1.4rem;
+      justify-content:center;
+      text-align: center;
+  } 
+  .number{
+    justify-content:center;
+      text-align: center
+  }
+  .perfil-back{
+    background-color: black;
+    padding-top: 2rem;
+  }
+  p{
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+  .star-img{
+    align-content: center;
+    align-self:center;
+  }
+  hr{
+    border-width: 2px;
+   border-color: grey;
+  }
+  .name{
+    font-size: 1.5rem;
+    color:white;
+    justify-content:center;
+    text-align: center;
+  }
+  .info img{
+    align-content: center;
+    align-self:center;
+    align-items: center;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .btn-ruleta{
+    margin-top:1rem;
+  }
+  .margin-for-line{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+  }
+  .insign{
+    justify-content:center;
+    text-align: center;
+  }
