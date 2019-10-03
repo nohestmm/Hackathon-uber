@@ -1,0 +1,102 @@
+.headerQA{
+    background-color: black;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 150px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column
+}
+.headerQA img{
+    width: 18%;
+    margin-top: 1%;
+}
+
+.headerQA h1{
+    font-size: 25px;
+    padding: 9% 0;
+
+}
+.backQA {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 6;
+    top: 14px;
+    margin-left: 4%;
+}
+.backQA img {
+    width: 20px;
+}
+.Name{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 30px;
+}
+.info1{
+    padding-top: 5%;
+}
+.infoQA{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    justify-content: left;
+    font-family: 'Open Sans', sans-serif;
+    padding: 4% 7% 0 7%;
+}
+.infoQA h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+ .badge{
+    white-space: normal;
+    font-size: 14px;
+}
+.badge h3{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.badge img {
+    padding: 2% 0 5% 0;
+}
+.badge button.btn.btn-outline-primary {
+    margin: 5%;
+}
+.line{
+    height: 1px;
+    background-color: #8d8d8d;
+    margin: 3% 7%;
+}
+
+
+button.btn.btn-warning.btn-lg.btn-block{
+    padding: 5%;
+}
+
+p{
+    text-align: left;
+    font-size: 14px;
+}
+
+.game button{
+    background: linear-gradient(90deg, #2E175E 0%, rgba(13, 160, 180, 0.68) 100%, #0BD3FF 100%, rgba(18, 137, 166, 0.7328) 100%);
+    font-family: 'Open Sans', sans-serif;
+    padding: 5%;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');

@@ -1,0 +1,148 @@
+.header{
+    background-image: url("../images/fondo.jpeg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 160px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position:relative; z-index:1;
+    flex-direction: column
+
+
+}
+.header img{
+    width: 18%;
+    margin-top: -7%;
+}
+.header h1{
+    font-size: 25px;
+    margin-top: 1%;
+}
+
+
+.qualification img{
+    width: 70%;
+    position: relative;
+    z-index: 2;
+    left: 59px;
+    top: -32px;
+}
+.Name{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 30px;
+}
+.back{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 6;
+    top: 34px;
+    margin-left: 4%;
+}
+.back img{
+    width: 20px;
+
+}
+
+.info{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    z-index: 3;
+    top: -37px;
+}
+.travel{
+    padding: 2% 10%;
+    text-align: center;
+    flex-direction: column
+}
+.badgets{
+    padding: 2% 10%;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 7;
+    top: -20px;
+}
+.badgets p {
+    text-align: center;
+}
+button.btn.btn-warning.btn-lg.btn-block{
+    padding: 5%;
+}
+p{
+    text-align: center;
+}
+.game{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.details{
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 5% 0%;
+    position: relative;
+    z-index: 5;
+    top: -27px;
+}
+.details p{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.game button{
+    background: linear-gradient(90deg, #2E175E 0%, rgba(13, 160, 180, 0.68) 100%, #0BD3FF 100%, rgba(18, 137, 166, 0.7328) 100%);
+    font-family: 'Open Sans', sans-serif;
+    padding: 5%;
+
+}
+.game{
+    padding: 5% 0%;
+    position: relative;
+    z-index: 4;
+    top: -37px;
+}
+.lineTwo,.lineThree{
+    height: 1px;
+    background-color: #8d8d8d;
+    margin: 3% 10%;
+    position: relative;
+    z-index: 4;
+    top: -37px;
+
+    
+}
+.lineOne{
+    background-color: #8d8d8d;
+    height: 81%;
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    margin-top: 8px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
