@@ -8,7 +8,7 @@ const Wheel = (props) => {
         <section className="all-wheel">
             <div className="afterbefore">
                 <span><Link to="/qa"><img src={back} alt="back"/></Link></span>
-                <span><Link to="/win">Saltar</Link></span>
+                <span className="jump"><Link to="/win">Saltar</Link></span>
             </div>
             <section className="container-main">
                 <h1 className="tittle-wheel">¡Gira la Ruleta!</h1>
