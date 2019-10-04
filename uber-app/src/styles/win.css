@@ -1,3 +1,5 @@
+.row{ padding: 0}
+
 .btn-to-win{
     background-color: #e22450;
     padding-top:0.5rem;
@@ -48,7 +50,7 @@ margin:0rem;
     text-align: center;
   } */
   .count{
-      font-size: 1.4rem;
+      font-size: 1.0rem;
       justify-content:center;
       text-align: center;
   } 
@@ -58,7 +60,7 @@ margin:0rem;
   }
   .perfil-back{
     background-color: black;
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
   p{
     margin-bottom: 0.5rem;
@@ -100,3 +102,10 @@ margin:0rem;
     justify-content:center;
     text-align: center;
   }
+
+  .arrowin{
+    width: 96%;
+    position: fixed;
+    display: flex;
+    top: 15px;
+    margin-left: 4%;}

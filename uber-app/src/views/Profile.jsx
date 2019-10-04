@@ -39,7 +39,7 @@ class Profile extends React.Component{
                 <div className="lineTwo"></div>
                 <div className="game">
                 <img src={win} alt="win"/>
-                <Link to= "/qa"><Button >¡Aumenta tus Ganancias!</Button></Link>
+                <Link to= "/qa"><Button >¡Ayuda y Gana!</Button></Link>
                 </div>
                 <div className="lineThree"></div>
                 <div className="details">

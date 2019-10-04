@@ -20,7 +20,7 @@ class WinTheme extends React.Component{
    {/*  <div  className=" navbar">
          Ayuda y gana
       </div> */}
-      <Link to ="/" className="backQA">
+      <Link to ="/" className="arrowin">
                         <img className="arrow" src={arrow} alt="arrow"/>
                     </Link>
            <div className="row justify-content-center perfil-back">
@@ -42,7 +42,7 @@ class WinTheme extends React.Component{
                       
                       </div>
                       <div className="col-8 col-sm-3 col-md-3 col-lg-4 col-xl-3   ">
-                             <p className="count">contador de estrellas<br></br>10 <img src={starcount}  id="logo" alt="logo" className="img-fluid"></img></p>
+                             <p className="count">Contador de estrellas<br></br>10 <img src={starcount}  id="logo" alt="logo" className="img-fluid"></img></p>
                              
                              
                       </div>
