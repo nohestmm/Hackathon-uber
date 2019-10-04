@@ -28,7 +28,7 @@ class WinTheme extends React.Component{
                     <div className="row justify-content-center">
                         <div className="col-5 col-sm-3 col-md-3 col-lg-4 col-xl-3 align-self-endr infowin"> 
                             <img src={perfil}  id="logo" alt="logo" className="img-fluid  rounded-circle center"></img>
-                            <p className="name">Gonzalo</p>
+                            <p className="name">Michael</p>
                         </div>
                     </div>
              </div>
