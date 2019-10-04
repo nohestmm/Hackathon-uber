@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     margin: 5px;
+    background: url("./images/Ruleta.png")
 }
 .tittle-wheel{
   font-family: 'Open Sans', sans-serif;

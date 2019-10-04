@@ -7,7 +7,7 @@ import ruleta from '../images/logo_ruleta.png'
 import toruleta from '../images/to_ruleta.png'
 import '../styles/win.css'
 import { Link } from 'react-router-dom'
-
+import arrow from '../images/Vector.png';
 class WinTheme extends React.Component{
     constructor(props){
         super(props);
@@ -20,6 +20,9 @@ class WinTheme extends React.Component{
    {/*  <div  className=" navbar">
          Ayuda y gana
       </div> */}
+      <Link to ="/" className="backQA">
+                        <img className="arrow" src={arrow} alt="arrow"/>
+                    </Link>
            <div className="row justify-content-center perfil-back">
                <div className="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-9" > 
                     <div className="row justify-content-center">

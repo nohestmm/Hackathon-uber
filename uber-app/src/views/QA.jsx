@@ -5,16 +5,16 @@ import insignia from '../images/insignia.JPG';
 import starcount from '../images/star2.png';
 import { Button } from 'reactstrap';
 import arrow from '../images/Vector.png';
-
+import { Link } from 'react-router-dom'
 
 class QA extends React.Component{
     render(){
         return (
             <div className="QA">
                 <div className="headerQA">
-                    <div className="backQA">
+                    <Link to ="/" className="backQA">
                         <img className="arrow" src={arrow} alt="arrow"/>
-                    </div>
+                    </Link>
                     <img className="Picture rounded-circle" src={profileImg} alt="user"/>
                     <div className="Name">
                         <h1>Michael</h1>
@@ -46,7 +46,7 @@ class QA extends React.Component{
                 <div className='badge'>
                     <img src={insignia} alt="insignia"/>
                     <h3>¡Motívate a ayudar en esta buena causa y de pasado aumentar tus ganancias!</h3>
-                    <Button outline color="primary">¡Prueba tu suerte aquí!</Button>{' '}
+                    <Link to = "/game"><Button outline color="primary">¡Prueba tu suerte aquí!</Button></Link>
                 </div>    
             </div>
         )

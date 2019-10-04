@@ -6,6 +6,7 @@ import win from '../images/gaana.JPG';
 import calificacion from '../images/calificaciones.PNG';
 import arrow from '../images/Vector.png';
 import badgs from '../images/badgs.JPG';
+import { Link } from 'react-router-dom'
 
 
 class Profile extends React.Component{
@@ -38,7 +39,7 @@ class Profile extends React.Component{
                 <div className="lineTwo"></div>
                 <div className="game">
                 <img src={win} alt="win"/>
-                <Button >¡Aumenta tus Ganancias!</Button>
+                <Link to= "/qa"><Button >¡Aumenta tus Ganancias!</Button></Link>
                 </div>
                 <div className="lineThree"></div>
                 <div className="details">
