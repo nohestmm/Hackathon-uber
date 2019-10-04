@@ -57,6 +57,18 @@
   font-size: 18px;
   width: 120px;
   }
+.all-wheel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  .afterbefore{
+    position: relative;
+    margin: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    top: -77px;;
+  }
 
 @keyframes infinite-spinning {
   from {

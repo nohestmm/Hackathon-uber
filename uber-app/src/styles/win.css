@@ -59,8 +59,9 @@ margin:0rem;
       text-align: center
   }
   .perfil-back{
+    position: relative;
     background-color: black;
-    padding-top: 4rem;
+    padding-top: 1rem;
   }
   p{
     margin-bottom: 0.5rem;
@@ -108,4 +109,6 @@ margin:0rem;
     position: fixed;
     display: flex;
     top: 15px;
-    margin-left: 4%;}
+    margin-left: 4%;
+  z-index: 10;
+}

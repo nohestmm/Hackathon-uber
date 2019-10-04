@@ -47,7 +47,6 @@ class Game extends React.Component {
             dataWheel: wheelTemp * prize,
             animatedWheel: true,
             typeOfPrize: this.prizeList[temporalValue],
-
         })
         setTimeout(() => {
             this.wheelRef.current.classList.add('img-wheel');
@@ -60,15 +59,13 @@ class Game extends React.Component {
         this.setState({ animatedWheel: false })
     }
     sweetAlertActivate() {
-
         this.setState({
             show: false,
             activateConfetti: false,
-            redirection:true,
+            redirection: true,
         })
     }
     stopWheel() {
-
         this.wheelRef.current.classList.remove("img-wheel");
         this.setState({
             animatedWheel: false,
@@ -76,14 +73,10 @@ class Game extends React.Component {
             show: true,
         })
     }
-    componentDidMount() {
-
-    }
     render() {
-
         return (
             <>
-                <Wheel
+                          <Wheel
                     animatedWheel={this.state.animatedWheel}
                     spinWheel={this.spinWheel}
                     wheelRef={this.wheelRef}
@@ -93,12 +86,12 @@ class Game extends React.Component {
                 />
                 <SweetAlert
                     show={this.state.show}
-                    title="Felicidades!"
-                    text={`Has ganado ${this.state.typeOfPrize}`}
+                    title={`¡Ganaste ${this.state.typeOfPrize}!` }
+                    text={"Pronto te contactaremos para hacer efectivo tu premio"}
                     onConfirm={() => this.sweetAlertActivate()}
                 />
                 {this.state.activateConfetti ? <Confetti /> : null}
-                {this.state.redirection ? <Redirect to = "/win"/> : null}
+                {this.state.redirection ? <Redirect to="/win" /> : null}
             </>
         )
     }

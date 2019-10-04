@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/Profile.scss';
 import { Button } from 'reactstrap';
 import profileImg from '../images/Michael.jpg';
-import win from '../images/gaana.JPG';
-import calificacion from '../images/calificaciones.PNG';
+import win from '../images/gaana.png';
+import calificaciones from '../images/calificaciones.png';
 import arrow from '../images/Vector.png';
 import badgs from '../images/badgs.JPG';
 import { Link } from 'react-router-dom'
@@ -23,7 +23,7 @@ class Profile extends React.Component{
                     </div>
                 </div>
                 <div className="qualification">
-                    <img src={calificacion} alt="calificacion"/>
+                    <img src={calificaciones} alt="calificacion"/>
                 </div>
                 <div className='info'>
                     <div className="travel">
@@ -38,8 +38,10 @@ class Profile extends React.Component{
                 </div>
                 <div className="lineTwo"></div>
                 <div className="game">
-                <img src={win} alt="win"/>
-                <Link to= "/qa"><Button >¡Ayuda y Gana!</Button></Link>
+                <div className="imgwin"><img src={win} alt="win"/></div>
+                <Link to= "/qa" className="btn-game">
+                    <Button >¡Ayuda y Gana!</Button>
+                    </Link>
                 </div>
                 <div className="lineThree"></div>
                 <div className="details">

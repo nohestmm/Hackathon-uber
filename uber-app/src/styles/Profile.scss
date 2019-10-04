@@ -24,7 +24,6 @@
     margin-top: 1%;
 }
 
-
 .qualification img{
     width: 70%;
     position: relative;
@@ -57,19 +56,19 @@
 
 .info{
     display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
+   
+ 
+    
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    z-index: 3;
+  
     top: -37px;
 }
 .travel{
+    position: relative;
     display: flex;
-    padding: 2% 10%;
+    padding: 2% 13%;
     align-items: center;
     flex-direction: column;
 }
@@ -91,12 +90,10 @@ p{
     text-align: center;
 }
 .game{
-    display: -webkit-flex;
+    
     display: flex;
-   
-    align-items: center;
-   
-    justify-content: center;
+       align-items: center;
+       justify-content: center;
 }
 .details{
     flex-wrap: wrap;
@@ -144,6 +141,15 @@ p{
     position: absolute;
     left: 50%;
     margin-top: 8px;
+}
+
+.imgwin{
+    margin-right: 16px;
+}
+.btn-game{
+   
+    width: 100%;
+    max-width: 150px;
 }
 
 

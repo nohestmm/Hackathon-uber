@@ -1,45 +1,51 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import wheel from '../images/wheel.png'
 import arrow from '../images/arrow.png'
+import back from '../images/back.png'
 const Wheel = (props) => {
-return(
-    <section className="container-main">
-        <h1 className="tittle-wheel">Gira la Ruleta!!!</h1>
-        <div className="container-arrow">
-           <img 
-           src={arrow}
-           alt="arrow"
-           className="img-responsive"
-           />
-        </div>
-        <div className="container-wheel">
-            <img 
-            id = "img-wheel"
-            src={wheel} 
-            alt="wheel"
-            className="img-responsive img-wheel"
-            style={{
-            transform:`rotate(${props.dataWheel}deg)`,
-            WebkitTransform:`rotate(${props.dataWheel}deg)`,  
-        }}
-        onTransitionEnd = {props.stopWheel}
-        ref= {props.wheelRef}
-            />
-        </div>
-        <div className="container-buttons_spin">
-            <div className= "container-buttons">
-                <button 
-                disabled = {props.animatedWheel} 
-                onClick={props.spinWheel} 
-                className = "btn-spin"
-                >Girar
-                </button>
+    return (
+        <section className="all-wheel">
+            <div className="afterbefore">
+                <span><Link to="/qa"><img src={back} alt="back"/></Link></span>
+                <span><Link to="/win">Saltar</Link></span>
+            </div>
+            <section className="container-main">
+                <h1 className="tittle-wheel">¡Gira la Ruleta!</h1>
+                <div className="container-arrow">
+                    <img
+                        src={arrow}
+                        alt="arrow"
+                        className="img-responsive"
+                    />
                 </div>
-           
-        </div>
-    </section>
-)
+                <div className="container-wheel">
+                    <img
+                        id="img-wheel"
+                        src={wheel}
+                        alt="wheel"
+                        className="img-responsive img-wheel"
+                        style={{
+                            transform: `rotate(${props.dataWheel}deg)`,
+                            WebkitTransform: `rotate(${props.dataWheel}deg)`,
+                        }}
+                        onTransitionEnd={props.stopWheel}
+                        ref={props.wheelRef}
+                    />
+                </div>
+                <div className="container-buttons_spin">
+                    <div className="container-buttons">
+                        <button
+                            disabled={props.animatedWheel}
+                            onClick={props.spinWheel}
+                            className="btn-spin"
+                        >Girar
+                </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    )
 
 }
 export default Wheel;
