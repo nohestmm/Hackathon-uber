@@ -70,7 +70,7 @@
 }
   .afterbefore{
     position: relative;
-    margin: 0 4%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-between;
     top: -96px;;
